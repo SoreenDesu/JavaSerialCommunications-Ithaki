@@ -51,7 +51,7 @@ public class userApplication {
 	 * Using the same modem for a whole session might prove buggy at times.
 	 */
 	
-    static final Modem establishConnection() {
+    	static final Modem establishConnection() {
 		Modem modem;
 		String message = " ";
 		modem = new Modem();
@@ -231,7 +231,7 @@ public class userApplication {
 	 * @param ARQ Indicates the ARQ message, in byte array form, to be examined.
 	 */
 	
-	static boolean arqPacketValidity(final byte[] ARQ) {
+	static final boolean arqPacketValidity(final byte[] ARQ) {
 		
 		String arqPacket = new String(ARQ);											
 		String arqFCS = arqPacket.substring(arqPacket.length() - 9, arqPacket.length() - 6);		
